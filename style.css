@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    margin: 0;
+    background-color: #bbff014c;
+}
+
+.form-container {
+    width: 35%;
+    padding: 2em;
+    margin: 0 auto;
+    background-color: rgba(126, 3, 136, 0.932);
+    color: #fff;
+    border-radius: 8px;
+}
+
+.input-box {
+    position: relative;
+}
+
+form input {
+    width: 100%;
+    padding: 1em 2em;
+    margin: .7em 0;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.804);
+}
+
+i {
+    position: absolute;
+    right: .3em;
+    top: 40%;
+    transform: translate(-50%);
+    color: #0000004c;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 1em 2em;
+    margin: .7em 0;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: rgba(3, 234, 255, 0.658);
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Break point */
+
+@media (min-width: 1200px) {
+    .form-container {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        padding: 1em;
+    }
+
+    .form-container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: .5em 0em;
+    }
+    
+    .form-container {
+        width: 80%;
+    }
+    form input {
+        padding: .8em 2em;
+        margin: .4em 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .form-container {
+        width: 98%;
+    }
+}
+
+@media (max-width: 400px) {
+    .form-container {
+        width: 99%;
+    }
+
+    form input {
+        margin: .3em 0;
+    }
+}
+
+@media (max-width: 300px) {
+    .container {
+        padding: 0;
+    }
+    
+    .form-container {
+        width: 100%;
+    }
+}
